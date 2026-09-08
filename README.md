@@ -35,9 +35,14 @@ curl -L -o data/coffee_arabica.csv https://raw.githubusercontent.com/jldbc/coffe
 # then open notebooks/01_define.py in Jupyter/VS Code and run each # %% cell in order
 ```
 
-## Results summary (fill in at the end)
+## Results summary
 | Metric | Baseline | After improvement |
 |---|---|---|
-| Defect rate | | |
-| Cpk | | |
-| Sigma level | | |
+| Out-of-spec lot rate (score < 80) | 13.71% | 11.15% |
+| Cpk | 0.27 | 0.31 |
+| Sigma level | 2.31 | 2.42 |
+| DPMO | 11,472 | — (re-run after adopting the tightened sourcing policy) |
+
+Improvement basis: simulated intake policy favoring the best-performing origin/processing-method
+combination found in Analyze (Ethiopia + Natural/Dry, mean score 85.41), applied to n=278 lots.
+See `charter/project_charter.md` for full findings and honest limitations.
