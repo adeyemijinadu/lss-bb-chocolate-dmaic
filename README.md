@@ -1,8 +1,8 @@
-# Reducing Coating/Wrapper Defect Rate on a Chocolate Enrobing Line
+# Reducing Out-of-Spec Rate on Incoming Cocoa/Couverture Lots
 ### A simulated Lean Six Sigma Black Belt DMAIC project
 
-**Author:** Yemi (DCLM Belgium) — built for IASSC ICBB exam preparation, Nov 2026
-**Status:** template scaffold — fill in as you progress through DMAIC
+**Author:** Yemi (DCLM Belgium) — Lean Six Sigma Black Belt portfolio project
+**Status:** complete — full DMAIC cycle run end-to-end on real data, see Results summary below
 
 ## Disclaimer
 This is a **simulated training project**. The underlying data is the real, publicly available
@@ -14,9 +14,13 @@ counting, grading by origin/processing method), which is why this real dataset w
 a purely synthetic one. It does not represent, and is not derived from, any employer's
 proprietary data or process.
 
-## Problem statement (fill in after Define phase)
-> On the [Line X] enrobing/wrapping line, the defect rate has been running at **_% vs. a target of _%**,
-> resulting in an estimated €___ / year in scrap, rework, and customer complaints.
+## Problem statement
+> Across 1,306 incoming cocoa/couverture lots, **13.71%** fall below the specialty-grade quality
+> threshold (score < 80/100) at intake, against a goal of under 8%. Baseline process capability
+> Cpk = 0.27 (well below the 1.33 benchmark for a capable process), DPMO ~ 11,472. A simulated
+> intake policy change (favoring the best-performing origin/processing-method combination found
+> in Analyze) demonstrably cuts the out-of-spec rate to 11.15% and raises Cpk to 0.31 — see
+> Results summary below and `charter/project_charter.md` for the full analysis.
 
 ## Project structure
 ```
