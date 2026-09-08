@@ -5,10 +5,14 @@
 **Status:** template scaffold — fill in as you progress through DMAIC
 
 ## Disclaimer
-This is a **simulated training project**. The underlying data is public/synthetic data from Kaggle
-(see `data/README.md` for the exact source and license), reframed with a chocolate-manufacturing
-narrative for Lean Six Sigma Black Belt exam preparation. It does not represent, and is not derived
-from, any employer's proprietary data or process.
+This is a **simulated training project**. The underlying data is the real, publicly available
+Coffee Quality Institute (CQI) Arabica lot database (MIT license — see `data/README.md`),
+reframed as incoming cocoa/couverture lot quality control for a chocolate manufacturer, for
+Lean Six Sigma Black Belt exam preparation. Coffee and cocoa share a near-identical
+agri-commodity incoming-QC workflow (lot cupping/sensory scoring, moisture testing, defect
+counting, grading by origin/processing method), which is why this real dataset was chosen over
+a purely synthetic one. It does not represent, and is not derived from, any employer's
+proprietary data or process.
 
 ## Problem statement (fill in after Define phase)
 > On the [Line X] enrobing/wrapping line, the defect rate has been running at **_% vs. a target of _%**,
@@ -27,7 +31,7 @@ requirements.txt
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-kaggle datasets download -d rabieelkharoua/predicting-manufacturing-defects-dataset -p data/ --unzip
+curl -L -o data/coffee_arabica.csv https://raw.githubusercontent.com/jldbc/coffee-quality-database/master/data/arabica_data_cleaned.csv
 # then open notebooks/01_define.py in Jupyter/VS Code and run each # %% cell in order
 ```
 
