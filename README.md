@@ -1,8 +1,8 @@
-# Reducing Out-of-Spec Rate on Incoming Cocoa/Couverture Lots
+# Cocoa/Couverture Intake Lot Quality — DMAIC Project
 ### A simulated Lean Six Sigma Black Belt DMAIC project
 
-**Author:** Yemi (DCLM Belgium) — Lean Six Sigma Black Belt portfolio project
-**Status:** complete — full DMAIC cycle run end-to-end on real data, see Results summary below
+**Author:** Yemi (DCLM Belgium) — Lean Six Sigma Black Belt portfolio project (self-guided)
+**Status:** in progress — working through DMAIC myself, phase by phase
 
 ## Disclaimer
 This is a **simulated training project**. The underlying data is the real, publicly available
@@ -15,12 +15,8 @@ a purely synthetic one. It does not represent, and is not derived from, any empl
 proprietary data or process.
 
 ## Problem statement
-> Across 1,306 incoming cocoa/couverture lots, **13.71%** fall below the specialty-grade quality
-> threshold (score < 80/100) at intake, against a goal of under 8%. Baseline process capability
-> Cpk = 0.27 (well below the 1.33 benchmark for a capable process), DPMO ~ 11,472. A simulated
-> intake policy change (favoring the best-performing origin/processing-method combination found
-> in Analyze) demonstrably cuts the out-of-spec rate to 11.15% and raises Cpk to 0.31 — see
-> Results summary below and `charter/project_charter.md` for the full analysis.
+> Fill in after Define phase.
+
 
 ## Project structure
 ```
@@ -39,14 +35,8 @@ curl -L -o data/coffee_arabica.csv https://raw.githubusercontent.com/jldbc/coffe
 # then open notebooks/01_define.py in Jupyter/VS Code and run each # %% cell in order
 ```
 
-## Results summary
+## Results summary (fill in at the end)
 | Metric | Baseline | After improvement |
 |---|---|---|
-| Out-of-spec lot rate (score < 80) | 13.71% | 11.15% |
-| Cpk | 0.27 | 0.31 |
-| Sigma level | 2.31 | 2.42 |
-| DPMO | 11,472 | — (re-run after adopting the tightened sourcing policy) |
-
-Improvement basis: simulated intake policy favoring the best-performing origin/processing-method
-combination found in Analyze (Ethiopia + Natural/Dry, mean score 85.41), applied to n=278 lots.
-See `charter/project_charter.md` for full findings and honest limitations.
+| | | |
+| | | |
